@@ -2,25 +2,52 @@
 
 ## 🚀 Giới thiệu
 C# là ngôn ngữ lập trình hiện đại, mạnh mẽ do Microsoft phát triển, chạy trên nền tảng **.NET**. Với C#, bạn có thể phát triển:
-- Ứng dụng **Desktop (WinForms, WPF)**
+- Ứng dụng **Desktop (WinForms, WPF, MAUI)**
 - Ứng dụng **Web (ASP.NET Core)**
 - Ứng dụng **Mobile (Xamarin, MAUI)**
 - **Game (Unity)**
 
-Repo này là lộ trình học C# chi tiết, từ cơ bản đến nâng cao, kèm theo tài liệu, dự án mẫu và bảng theo dõi tiến độ học.
+Repo này là lộ trình học C# chi tiết, từ cơ bản đến nâng cao, kèm theo tài liệu, dự án mẫu và phân tích điểm mạnh của C#.
 
 ---
 
 ## 🗂️ Mục lục
-1. [Cài đặt môi trường](#-cài-đặt-môi-trường)
-2. [Cơ bản](#-cơ-bản)
-3. [OOP trong C#](#-oop-trong-c)
-4. [Nâng cao](#-nâng-cao)
-5. [Ứng dụng thực tế](#-ứng-dụng-thực-tế)
-6. [Dự án mẫu](#-dự-án-mẫu)
-7. [Ví dụ code](#-ví-dụ-code)
-8. [Bảng tiến độ học tập](#-bảng-tiến-độ-học-tập)
-9. [Tài liệu tham khảo](#-tài-liệu-tham-khảo)
+1. [C# có thể làm gì?](#-c-có-thể-làm-gì)
+2. [C# mạnh nhất ở đâu?](#-c-mạnh-nhất-ở-đâu)
+3. [Cài đặt môi trường](#-cài-đặt-môi-trường)
+4. [Cơ bản](#-cơ-bản)
+5. [OOP trong C#](#-oop-trong-c)
+6. [Nâng cao](#-nâng-cao)
+7. [Ứng dụng thực tế](#-ứng-dụng-thực-tế)
+8. [Dự án mẫu](#-dự-án-mẫu)
+9. [Bảng tiến độ học tập](#-bảng-tiến-độ-học-tập)
+10. [Tài liệu tham khảo](#-tài-liệu-tham-khảo)
+
+---
+
+## 🌍 C# có thể làm gì?
+C# là ngôn ngữ đa năng, chạy trên **.NET**, có thể phát triển:
+
+- **Ứng dụng Desktop**: WinForms, WPF, MAUI.
+- **Ứng dụng Web**: ASP.NET Core (MVC, Web API, Blazor).
+- **Game**: Unity Engine (hầu hết code gameplay bằng C#).
+- **Mobile App**: Xamarin / .NET MAUI (Android + iOS).
+- **Cloud & Microservices**: Azure Functions, Web API.
+- **AI, ML, IoT**: thông qua ML.NET hoặc tích hợp thư viện khác.
+- **Automation & Tooling**: viết script, CLI tool, tự động hóa.
+
+---
+
+## 💪 C# mạnh nhất ở đâu?
+
+1. **Game Development** 🎮  
+   Unity là engine game top đầu thế giới (Genshin Impact, Cuphead, Ori, Hollow Knight…) → tất cả code gameplay bằng **C#**. Đây là điểm **C# độc quyền áp đảo**.
+
+2. **Ứng dụng Enterprise & Web Backend** 🏢  
+   ASP.NET Core có **hiệu năng cực cao**, bảo mật tốt, được doanh nghiệp lớn tin dùng (ERP, CRM, hệ thống quản lý).
+
+3. **Desktop Application** 💻  
+   WinForms, WPF, MAUI → phát triển app desktop nhanh chóng, tích hợp UI + backend trong cùng 1 ngôn ngữ.
 
 ---
 
@@ -114,39 +141,20 @@ Chọn 1 trong các hướng:
 
 ---
 
-## 📂 Ví dụ code
-Repo sẽ có thư mục `examples/` chứa code mẫu theo từng cấp độ:
-
-```
-examples/
-├── 01_hello_world/Program.cs
-├── 02_calculator/Program.cs
-├── 03_student_list/Program.cs
-├── 04_oop_animals/Animal.cs, Dog.cs, Cat.cs
-├── 05_oop_employees/Employee.cs, Manager.cs, Developer.cs
-├── 06_file_io/FileReadWrite.cs
-└── 07_linq_todo/TodoApp.cs
-```
-
----
-
 ## 📊 Bảng tiến độ học tập
-Đại ka có thể tick ✅ khi hoàn thành từng mục.
 
-| STT | Chủ đề                  | Nội dung chính                          | Hoàn thành |
-|-----|--------------------------|-----------------------------------------|-------------|
-| 1   | Cài đặt môi trường       | Visual Studio / VS Code, .NET SDK       | ⬜ |
-| 2   | Biến & Kiểu dữ liệu      | int, string, bool, double, var, dynamic | ⬜ |
-| 3   | Toán tử & Cấu trúc lặp   | if, switch, for, while, foreach         | ⬜ |
-| 4   | Hàm & Collection         | Method, Array, List, Dictionary         | ⬜ |
-| 5   | OOP cơ bản               | Class, Object, Encapsulation            | ⬜ |
-| 6   | OOP nâng cao             | Inheritance, Polymorphism, Abstraction  | ⬜ |
-| 7   | Interface & Abstract     | get; set;, interface, abstract class    | ⬜ |
-| 8   | Delegate & Event         | Delegate, Event, Lambda                 | ⬜ |
-| 9   | LINQ                     | Query dữ liệu                           | ⬜ |
-| 10  | Async/Await & File I/O   | Bất đồng bộ, đọc/ghi file               | ⬜ |
-| 11  | Dự án nhỏ                | Quản lý SV / ToDo App                   | ⬜ |
-| 12  | Hướng chuyên sâu         | Web / Desktop / Game / Mobile           | ⬜ |
+- [ ] Cài đặt môi trường
+- [ ] Biến & Kiểu dữ liệu
+- [ ] Toán tử & Cấu trúc lặp
+- [ ] Hàm & Collection
+- [ ] OOP cơ bản
+- [ ] OOP nâng cao
+- [ ] Interface & Abstract
+- [ ] Delegate & Event
+- [ ] LINQ
+- [ ] Async/Await & File I/O
+- [ ] Dự án nhỏ
+- [ ] Hướng chuyên sâu
 
 ---
 
@@ -165,4 +173,5 @@ examples/
 4. Sau đó: Chọn hướng chuyên sâu (Web, Desktop, Game, Mobile)
 
 ---
-by qngoc
+
+👉 Repo này sẽ có thêm thư mục `examples/` chứa code mẫu cho từng phần học.
