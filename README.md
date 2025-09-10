@@ -7,7 +7,7 @@ C# là ngôn ngữ lập trình hiện đại, mạnh mẽ do Microsoft phát tr
 - Ứng dụng **Mobile (Xamarin, MAUI)**
 - **Game (Unity)**
 
-Repo này là lộ trình học C# chi tiết, từ cơ bản đến nâng cao, kèm theo tài liệu và dự án mẫu.
+Repo này là lộ trình học C# chi tiết, từ cơ bản đến nâng cao, kèm theo tài liệu, dự án mẫu và bảng theo dõi tiến độ học.
 
 ---
 
@@ -19,7 +19,8 @@ Repo này là lộ trình học C# chi tiết, từ cơ bản đến nâng cao, 
 5. [Ứng dụng thực tế](#-ứng-dụng-thực-tế)
 6. [Dự án mẫu](#-dự-án-mẫu)
 7. [Ví dụ code](#-ví-dụ-code)
-8. [Tài liệu tham khảo](#-tài-liệu-tham-khảo)
+8. [Bảng tiến độ học tập](#-bảng-tiến-độ-học-tập)
+9. [Tài liệu tham khảo](#-tài-liệu-tham-khảo)
 
 ---
 
@@ -127,143 +128,25 @@ examples/
 └── 07_linq_todo/TodoApp.cs
 ```
 
-**01_hello_world/Program.cs**
-```csharp
-using System;
-class Program
-{
-    static void Main() => Console.WriteLine("Hello, C#!");
-}
-```
+---
 
-**02_calculator/Program.cs**
-```csharp
-using System;
-class Program
-{
-    static void Main()
-    {
-        Console.Write("Nhập a: ");
-        int a = int.Parse(Console.ReadLine());
-        Console.Write("Nhập b: ");
-        int b = int.Parse(Console.ReadLine());
-        Console.WriteLine($"Tổng: {a+b}, Hiệu: {a-b}, Tích: {a*b}, Thương: {(double)a/b}");
-    }
-}
-```
+## 📊 Bảng tiến độ học tập
+Đại ka có thể tick ✅ khi hoàn thành từng mục.
 
-**03_student_list/Program.cs**
-```csharp
-using System;
-using System.Collections.Generic;
-
-class Program
-{
-    static void Main()
-    {
-        var students = new List<string> {"An", "Bình", "Chi"};
-        foreach (var s in students)
-            Console.WriteLine($"Sinh viên: {s}");
-    }
-}
-```
-
-**04_oop_animals/Animal.cs**
-```csharp
-public abstract class Animal
-{
-    public string Name { get; set; }
-    public abstract void Speak();
-}
-```
-
-**04_oop_animals/Dog.cs**
-```csharp
-using System;
-
-public class Dog : Animal
-{
-    public override void Speak() => Console.WriteLine($"{Name} sủa: Gâu Gâu!");
-}
-```
-
-**04_oop_animals/Cat.cs**
-```csharp
-using System;
-
-public class Cat : Animal
-{
-    public override void Speak() => Console.WriteLine($"{Name} kêu: Meo Meo!");
-}
-```
-
-**05_oop_employees/Employee.cs**
-```csharp
-public class Employee
-{
-    public string Name { get; set; }
-    public double Salary { get; set; }
-
-    public virtual double GetSalary() => Salary;
-}
-```
-
-**05_oop_employees/Manager.cs**
-```csharp
-public class Manager : Employee
-{
-    public double Bonus { get; set; }
-    public override double GetSalary() => Salary + Bonus;
-}
-```
-
-**05_oop_employees/Developer.cs**
-```csharp
-public class Developer : Employee
-{
-    public string ProgrammingLanguage { get; set; }
-}
-```
-
-**06_file_io/FileReadWrite.cs**
-```csharp
-using System;
-using System.IO;
-
-class FileReadWrite
-{
-    static void Main()
-    {
-        string path = "data.txt";
-        File.WriteAllText(path, "Xin chào C#!");
-        string content = File.ReadAllText(path);
-        Console.WriteLine($"Nội dung file: {content}");
-    }
-}
-```
-
-**07_linq_todo/TodoApp.cs**
-```csharp
-using System;
-using System.Collections.Generic;
-using System.Linq;
-
-class TodoApp
-{
-    static void Main()
-    {
-        var todos = new List<string> {"Học C#", "Làm bài tập", "Viết dự án"};
-
-        var query = from t in todos
-                    where t.Contains("Học")
-                    select t;
-
-        Console.WriteLine("Công việc cần làm có từ 'Học':");
-        foreach (var t in query)
-            Console.WriteLine(t);
-    }
-}
-```
+| STT | Chủ đề                  | Nội dung chính                          | Hoàn thành |
+|-----|--------------------------|-----------------------------------------|-------------|
+| 1   | Cài đặt môi trường       | Visual Studio / VS Code, .NET SDK       | ⬜ |
+| 2   | Biến & Kiểu dữ liệu      | int, string, bool, double, var, dynamic | ⬜ |
+| 3   | Toán tử & Cấu trúc lặp   | if, switch, for, while, foreach         | ⬜ |
+| 4   | Hàm & Collection         | Method, Array, List, Dictionary         | ⬜ |
+| 5   | OOP cơ bản               | Class, Object, Encapsulation            | ⬜ |
+| 6   | OOP nâng cao             | Inheritance, Polymorphism, Abstraction  | ⬜ |
+| 7   | Interface & Abstract     | get; set;, interface, abstract class    | ⬜ |
+| 8   | Delegate & Event         | Delegate, Event, Lambda                 | ⬜ |
+| 9   | LINQ                     | Query dữ liệu                           | ⬜ |
+| 10  | Async/Await & File I/O   | Bất đồng bộ, đọc/ghi file               | ⬜ |
+| 11  | Dự án nhỏ                | Quản lý SV / ToDo App                   | ⬜ |
+| 12  | Hướng chuyên sâu         | Web / Desktop / Game / Mobile           | ⬜ |
 
 ---
 
@@ -282,5 +165,4 @@ class TodoApp
 4. Sau đó: Chọn hướng chuyên sâu (Web, Desktop, Game, Mobile)
 
 ---
-
-👉 Repo này sẽ có thêm thư mục `examples/` chứa code mẫu cho từng phần học.
+by qngoc
