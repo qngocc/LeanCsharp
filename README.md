@@ -20,8 +20,9 @@ Repo này là lộ trình học C# chi tiết, từ cơ bản đến nâng cao, 
 6. [Nâng cao](#-nâng-cao)
 7. [Ứng dụng thực tế](#-ứng-dụng-thực-tế)
 8. [Dự án mẫu](#-dự-án-mẫu)
-9. [Bảng tiến độ học tập](#-bảng-tiến-độ-học-tập)
-10. [Tài liệu tham khảo](#-tài-liệu-tham-khảo)
+9. [📌 Dự án luyện tập WinForms](#-dự-án-luyện-tập-winform)
+10. [Bảng tiến độ học tập](#-bảng-tiến-độ-học-tập)
+11. [Tài liệu tham khảo](#-tài-liệu-tham-khảo)
 
 ---
 
@@ -138,6 +139,53 @@ Chọn 1 trong các hướng:
 - Web API quản lý sản phẩm (ASP.NET Core)
 - Game nhỏ (Unity - Pong, Flappy Bird clone)
 - Ứng dụng ToDo App (WPF hoặc Console)
+
+---
+
+## 📌 Dự án luyện tập WinForms
+
+### 🔹 Cơ bản
+1. **Máy tính bỏ túi** 🧮  
+   - Các phép tính: +, −, ×, ÷.  
+   - Thêm căn bậc 2, %, x².
+
+2. **Notepad mini** 📝  
+   - Mở / Lưu file `.txt`.  
+   - Chỉnh sửa font chữ, màu chữ.  
+   - Tìm kiếm (Find/Replace).
+
+3. **Ứng dụng đồng hồ** ⏰  
+   - Hiển thị giờ hiện tại.  
+   - Thêm báo thức (Alarm).
+
+### 🔹 Trung bình
+4. **Quản lý danh bạ** 📒  
+   - Thêm, sửa, xóa liên hệ.  
+   - Lưu vào file `.csv` hoặc `.json`.
+
+5. **Todo List (Quản lý công việc)** ✅  
+   - Thêm / Xóa công việc.  
+   - Đánh dấu hoàn thành.  
+   - Lưu dữ liệu ra file.
+
+6. **Ứng dụng Quản lý sinh viên** 🎓  
+   - Thêm, sửa, xóa sinh viên.  
+   - Tìm kiếm theo tên hoặc mã.  
+   - Lưu dữ liệu bằng `List` hoặc `SQLite`.
+
+### 🔹 Nâng cao
+7. **Ứng dụng Quản lý bán hàng mini** 🛒  
+   - Quản lý sản phẩm (tên, giá, số lượng).  
+   - Giỏ hàng + tính tổng tiền.  
+   - Xuất hóa đơn ra file `.txt` hoặc `.pdf`.
+
+8. **Ứng dụng Chat LAN (mini)** 💬  
+   - Chat qua `TCP/IP` trong mạng LAN.  
+   - Giao diện: hộp chat + danh sách user.
+
+9. **Ứng dụng Music Player** 🎶  
+   - Mở nhạc `.mp3` bằng thư viện `Windows Media Player`.  
+   - Play, Pause, Stop, Next.
 
 ---
 
